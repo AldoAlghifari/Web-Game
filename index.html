@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AL Game</title>
+    <style>
+      body {
+        background-image: url("img.png");
+      }
+      h1,
+      H2,
+      h3 {
+        text-align: center;
+        font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+        color: aliceblue;
+      }
+      .menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .menu :hover {
+        color: rgb(4, 0, 255);
+      }
+
+      .pilih {
+        font-size: 16px;
+        width: 10rem;
+        height: 4rem;
+        background-color: rgb(231, 250, 244);
+        border-radius: 20%;
+        margin: 20px;
+        cursor: pointer;
+      }
+
+      footer {
+        text-align: center;
+        font-size: 20px;
+        margin-top: 14rem;
+        color: aliceblue;
+      }
+
+      footer .social {
+        padding: 1rem 0 1rem;
+        color: aquamarine;
+      }
+      footer .social :hover {
+        color: aliceblue;
+      }
+
+      /* Mobile phone */
+      @media (max-width: 450px) {
+        html {
+          font-size: 55%;
+        }
+      }
+    </style>
+    <link rel="icon" type="image/x-icon" href="AAcorp.png" />
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <header>
+      <h1>WELCOME TO</h1>
+      <h2>ALDO GAME</h2>
+      <h3>PILIH & MAINKAN GAME SESUKAMU...🤩🤩🤩</h3>
+      <div class="menu">
+        <a href="doodleGame.html"
+          ><input type="button" value="Doodle Game" class="pilih"
+        /></a>
+        <a href="SnakeGame.html"
+          ><input type="button" value="Snake Game" class="pilih"
+        /></a>
+        <a href="WarGame.html"
+          ><input type="button" value="War Game" class="pilih"
+        /></a>
+      </div>
+    </header>
+    <footer>
+      <div class="social">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+      </div>
+      <i>Created by aldoalghifari .| &copy. 2023</i>
+    </footer>
+
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
